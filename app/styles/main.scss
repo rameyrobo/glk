@@ -51,6 +51,10 @@ $icon-font-path: '../fonts/';
     width:100;
     height:75%;
     }
+    
+.brandList{
+    margin-top:360px;
+}
 
     }
 
@@ -60,12 +64,32 @@ $icon-font-path: '../fonts/';
         {
         margin-top:0;
         }
+        .brandList{
+        margin-top: 80%;
+        }
     }
 
+    
+
 @media(min-width:767px) {
+     .brandList{ 
+  margin-left: -80%;
+  margin-top: 75%
+}
+.navList{
+    margin-left:-85%;
+    margin-top:5%
+
+}
+
+.socialList{
+      margin-right:-555px;
+    }
+
     .intro {
         height: 100%;
         padding: 0;
+
 
     }
 
@@ -76,7 +100,36 @@ $icon-font-path: '../fonts/';
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
+
+     
+  
 }
+
+/* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    .brandList{
+      margin-left: -78%;
+     margin-top: 45%;
+    }
+
+    .socialList{
+      margin-right:-675px;
+      margin-top:100px;
+    }
+    }
+/* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    .brandList {
+  margin-left: -85%;
+  margin-top: 40%;
+}
+.socialList{
+      margin-right:-875px;
+      margin-top:100px;
+    }
+
+    }
+
 
 body {
     width: 100%;
@@ -98,4 +151,32 @@ list-style: none;
 display: inline;
 list-style-type: none;
 padding-right: 20px;
+}
+
+.navList{
+    list-style:none;
+    text-transform:uppercase;
+
+}
+
+.socialList{
+    list-style:none;
+    text-transform:uppercase;
+
+}
+
+.socialList li{
+display: inline;
+list-style-type: none;
+padding-right: 0;
+}
+a{
+    color:#fff
+}
+a:hover{
+    color:red;
+    text-style:none;
+}
+a:link{
+    text-decoration:none;
 }
