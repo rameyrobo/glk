@@ -56,79 +56,30 @@ $icon-font-path: '../fonts/';
     margin-top:360px;
 }
 
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-    .intro
-        {
-        margin-top:0;
-        }
-        .brandList{
-        margin-top: 80%;
-        }
-    }
-
-    
-
-@media(min-width:767px) {
-     .brandList{ 
-  margin-left: -80%;
-  margin-top: 75%
-}
-.navList{
-    margin-left:-85%;
-    margin-top:-18%
-
+.col-xs-12.socialRow {
+  top: 250px;
 }
 
-.socialList{
-      margin-right:-555px;
-    }
-
-    .intro {
-        height: 100%;
-        padding: 0;
-
-
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 25px;
-    }
-
-     
-  
+.col-xs-12.brandRow {
+  bottom: 110px;
+  padding: 0;
 }
 
-/* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-    .brandList{
-      margin-left: -78%;
-     margin-top: 45%;
-    }
-
-    .socialList{
-      margin-right:-675px;
-      margin-top:100px;
-    }
-    }
-/* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-    .brandList {
-  margin-left: -85%;
-  margin-top: 40%;
+.container.mainPage {
+  margin-left: -50px;
 }
-.socialList{
-      margin-right:-875px;
-      margin-top:100px;
-    }
 
     }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    .container-fluid.mainPage {
+  margin-left: -50px;
+}
+
+
+    }
+
 
 
 body {
@@ -179,4 +130,7 @@ a:hover{
 }
 a:link{
     text-decoration:none;
+}
+.container-fluid.mainPage {
+  margin-left: -5%;
 }
