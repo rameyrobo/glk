@@ -12,17 +12,12 @@ $icon-font-path: '../fonts/';
 }
 
 
-
-
-
-.intro {
-    display: table;
+html {
     width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    
+    height:100%;
+}
+
+body{
     background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -31,152 +26,145 @@ $icon-font-path: '../fonts/';
     -o-background-size: cover;
 }
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-
-/* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-    .intro{
-    margin-top:0px;
-    width:100;
-    height:75%;
-    }
-    
-.brandList{
-    margin-top:360px;
-}
-
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-    .intro
-        {
-        margin-top:0;
-        }
-        .brandList{
-        margin-top: 80%;
-        }
-    }
-
-    
-
-@media(min-width:767px) {
-     .brandList{ 
-  margin-left: -80%;
-  margin-top: 75%
-}
-.navList{
-    margin-left:-85%;
-    margin-top:-18%
-
-}
-
-.socialList{
-      margin-right:-555px;
-    }
-
-    .intro {
-        height: 100%;
-        padding: 0;
 
 
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 25px;
-    }
-
-     
-  
-}
-
-/* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-    .brandList{
-      margin-left: -78%;
-     margin-top: 45%;
-    }
-
-    .socialList{
-      margin-right:-675px;
-      margin-top:100px;
-    }
-    }
-/* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-    .brandList {
-  margin-left: -85%;
-  margin-top: 40%;
-}
-.socialList{
-      margin-right:-875px;
-      margin-top:100px;
-    }
-
-    }
-
-
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-}
-.brandList {
-list-style: none;
-}
-
-.brandList li{
-display: inline;
-list-style-type: none;
-padding-right: 20px;
-}
-
-.navList{
-    list-style:none;
-    text-transform:uppercase;
-
-}
-
-.socialList{
-    list-style:none;
-    text-transform:uppercase;
-
-}
-
-.socialList li{
-display: inline;
-list-style-type: none;
-padding-right: 0;
-}
 a{
     color:#fff
 }
+
 a:hover{
     color:red;
     text-style:none;
 }
+
 a:link{
     text-decoration:none;
 }
+/* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+   
+
+
+.intro {
+margin-left: -10%;
+}
+
+.intro .intro-body {
+margin-top:25%;
+}
+    
+
+.navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -25px;
+    text-align: center;
+    margin:0 auto;
+
+}
+
+.socialList {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+width: 100%;
+left: 0;
+top: 320px;
+text-align: center;
+margin: auto;
+}
+
+.socialList li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 0;
+}
+
+.socialList img {
+max-width:25%
+}
+}
+    
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 480px) and (orientation:landscape) {
+    .navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -110px;
+    text-align: center;
+    margin:0 auto;
+
+}
+
+
+   }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    .navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -120px;
+    text-align: center;
+    margin:0 auto;
+    }
+    .intro{
+    margin-left:-3.5%;
+    }}
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    .navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -170px;
+    text-align: center;
+    margin:0 auto;
+    }}
+
+     /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    .navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -250px;
+    text-align: center;
+    margin:0 auto;
+
+
+}}
+
+ /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1500px) {
+    .navList{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -350px;
+    text-align: center;
+    margin:0 auto;
+
+
+}
+    }
+    
+    
